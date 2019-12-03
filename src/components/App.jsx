@@ -9,11 +9,13 @@ function App(){
   return (
     <div>
       <Header/>
-      <Switch>
-        <Route exact path='/' component={Welcome} />
-        <Route path='/taplist' component={TapList} />
-        <Route component={Error404} />
-      </Switch>
+      <div className='container'>
+        <Switch>
+          <Route exact path='/' component={Welcome} />
+          <Route path='/taplist' component={TapList} />
+          <Route component={Error404} />
+        </Switch>
+      </div>
     </div>
   );
 }

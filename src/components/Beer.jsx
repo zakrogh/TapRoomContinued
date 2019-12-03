@@ -6,14 +6,16 @@ function Beer(props){
     <div className="color-toggle">
       <style global jsx>{`
           div .color-toggle{
-            background-color: red;
+            background-color: bisque;
           }
           .color-toggle:hover{
-            background: green;
+            background: lightblue;
           }
         `}</style>
-        <h3>{props.location} - {props.names}</h3>
-        <p><em>{props.issue}</em></p>
+        <h3>{props.brand} - {props.name}</h3>
+        <p><em>{props.type}</em></p>
+        <p>Price: ${props.price}</p>
+        <p>ABV: {props.alcoholContent}</p>
         <hr/>
       </div>
   );

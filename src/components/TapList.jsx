@@ -37,7 +37,7 @@ function TapList(props){
   return (
     <div>
       <hr/>
-      {masterBeerList.map((beer, index)=>
+      {masterBeerList.map((beer, index) =>
         <Beer name={beer.name}
           brand={beer.brand}
           type={beer.type}
