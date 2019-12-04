@@ -25,7 +25,15 @@ class App extends React.Component {
 
   componentDidMount() {
   }
+  
   componentWillUnmount(){
+  }
+  handleAddingNewBeerToList(newBeer){
+    var newBeerId = v4();
+    var newMasterBeerList = Object.assign({}, this.state.masterBeerList, {
+      [newBeerId]: newBeer
+    });
+    this.setState({masterBeerList: newMasterBeerList});
   }
 
   render(){
