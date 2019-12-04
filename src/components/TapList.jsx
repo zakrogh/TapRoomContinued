@@ -1,6 +1,5 @@
 import React from 'react';
 import Beer from './Beer';
-import PropTypes from 'prop-types';
 
 var masterBeerList = [
   {
@@ -33,7 +32,7 @@ var masterBeerList = [
   }
 ];
 
-function TapList(props){
+function TapList(){
   return (
     <div>
       <hr/>

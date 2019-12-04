@@ -2,22 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Beer(props){
+  var componentStyle = {
+    backgroundColor: 'bisque',
+    padding: 10
+  };
   return (
-    <div className="color-toggle">
-      <style global jsx>{`
-          div .color-toggle{
-            background-color: bisque;
-          }
-          .color-toggle:hover{
-            background: lightblue;
-          }
-        `}</style>
-        <h3>{props.brand} - {props.name}</h3>
-        <p><em>{props.type}</em></p>
-        <p>Price: ${props.price}</p>
-        <p>ABV: {props.alcoholContent}</p>
-        <hr/>
-      </div>
+    <div className="color-toggle" style={componentStyle}>
+      <h3>{props.brand} - {props.name}</h3>
+      <p><em>{props.type}</em></p>
+      <p>Price: ${props.price}</p>
+      <p>ABV: {props.alcoholContent}</p>
+      <hr/>
+    </div>
   );
 }
 
