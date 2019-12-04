@@ -7,7 +7,7 @@ class NewBeerControl extends React.Component {
   render(){
     return (
       <div>
-        <NewBeerForm onNewBeerCreation={this.props.onNewBeerCreation}/>;
+        <NewBeerForm onNewBeerCreation={this.props.onNewBeerCreation}/>
       </div>
     );
   }

@@ -22,7 +22,8 @@ Beer.propTypes = {
   brand: PropTypes.string,
   type: PropTypes.string,
   price: PropTypes.number,
-  alcoholContent: PropTypes.number
+  alcoholContent: PropTypes.number,
+  beerId: PropTypes.string.isRequired
 };
 
 export default Beer;

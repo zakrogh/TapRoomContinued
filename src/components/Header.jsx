@@ -5,7 +5,7 @@ function Header(){
   return (
     <div>
       <h1>Tap Room</h1>
-      <Link to="/">Home</Link> | <Link to="/taplist">Tap List</Link>
+      <Link to="/">Home</Link> | <Link to="/taplist">Tap List</Link> | <Link to="/newbeer">Add a Beer</Link>
     </div>
   );
 }

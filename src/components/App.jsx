@@ -3,6 +3,7 @@ import Header from './Header';
 import { Switch, Route } from 'react-router-dom';
 import Error404 from './Error404';
 import TapList from './TapList';
+import NewBeerControl from './NewBeerControl';
 import Welcome from './Welcome';
 /*eslint-disable*/
 import Moment from 'moment';
@@ -25,7 +26,7 @@ class App extends React.Component {
 
   componentDidMount() {
   }
-  
+
   componentWillUnmount(){
   }
   handleAddingNewBeerToList(newBeer){
@@ -39,11 +40,12 @@ class App extends React.Component {
   render(){
     return (
       <div>
-        <Header/>
         <div className='container'>
+          <Header/>
           <Switch>
             <Route exact path='/' component={Welcome} />
-            <Route path='/taplist' component={TapList} />
+            <Route path='/newbeer' render={()=><NewBeerControl onNewBeerCreation={this.handleAddingNewBeerToList} />} />
+            <Route path='/taplist' render={()=><TapList beerList={this.state.masterBeerList} />} />
             <Route component={Error404} />
           </Switch>
         </div>
