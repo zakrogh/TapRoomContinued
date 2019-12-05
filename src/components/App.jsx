@@ -6,8 +6,8 @@ import TapList from './TapList';
 import NewBeerControl from './NewBeerControl';
 import Welcome from './Welcome';
 /*eslint-disable*/
-import Moment from 'moment';
 import { v4 } from 'uuid';
+import Beer from './Beer';
 /*eslint-enable*/
 class App extends React.Component {
   constructor(props) {

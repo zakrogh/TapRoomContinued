@@ -17,35 +17,43 @@ function NewBeerForm(props){
     _price.value = '';
     _alcoholContent.value = '';
   }
+  var componentStyle = {
+    margin: 5
+  };
 
   return (
-    <div>
+    <div >
       <form onSubmit={handleNewBeerFormSubmission}>
         <input
           type='text'
           id='name'
           placeholder='Beer Name'
-          ref={(input) => {_name = input;}}/>
+          ref={(input) => {_name = input;}} style={componentStyle}/>
+        <br/>
         <input
           type='text'
           id='brand'
           placeholder='Brewery'
-          ref={(input) => {_brand = input;}}/>
+          ref={(input) => {_brand = input;}} style={componentStyle}/>
+        <br/>
         <input
           type='text'
           id='type'
           placeholder='Beer Type'
-          ref={(input) => {_type = input;}}/>
+          ref={(input) => {_type = input;}} style={componentStyle}/>
+        <br/>
         <input
           type='text'
           id='price'
           placeholder='Price'
-          ref={(input) => {_price = input;}}/>
+          ref={(input) => {_price = input;}} style={componentStyle}/>
+        <br/>
         <input
           type='text'
           id='alcoholContent'
           placeholder='ABV'
-          ref={(input) => {_alcoholContent = input;}}/>
+          ref={(input) => {_alcoholContent = input;}} style={componentStyle}/>
+        <hr/>
         <button className='btn btn-warning' type='submit'>Submit</button>
       </form>
     </div>
