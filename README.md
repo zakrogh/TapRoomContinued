@@ -16,9 +16,11 @@ _This website is just a basic template to showcase client side routing with a st
 
 ## Project Specifications
 
-* _The user can navigate from the welcome page to the tap list page_
+* _The user can navigate from the welcome page to the tap list page._
+* _The user can add beers to the tap list._
+* _Beers will show up in the tap list._
 
-![component diagram](https://github.com/zakrogh/TapRoom/blob/master/New%20Project.png)
+![component diagram](https://github.com/zakrogh/TapRoomContinued/blob/master/New%20Project.png)
 
 ## Support and contact details
 
