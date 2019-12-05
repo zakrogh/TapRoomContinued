@@ -18,7 +18,7 @@ function Beer(props){
 }
 
 Beer.propTypes = {
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
   brand: PropTypes.string,
   type: PropTypes.string,
   price: PropTypes.number,

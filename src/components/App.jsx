@@ -24,11 +24,6 @@ class App extends React.Component {
     this.setState({selectedBeer: beerId});
   }
 
-  componentDidMount() {
-  }
-
-  componentWillUnmount(){
-  }
   handleAddingNewBeerToList(newBeer){
     var newBeerId = v4();
     var newMasterBeerList = Object.assign({}, this.state.masterBeerList, {
@@ -45,7 +40,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path='/' component={Welcome} />
             <Route path='/newbeer' render={()=><NewBeerControl onNewBeerCreation={this.handleAddingNewBeerToList} />} />
-            <Route path='/taplist' render={()=><TapList beerList={this.state.masterBeerList} />} />
+            <Route path='/taplist' render={()=><TapList tapList={this.state.masterBeerList} />} />
             <Route component={Error404} />
           </Switch>
         </div>
